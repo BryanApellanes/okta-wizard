@@ -1,0 +1,20 @@
+﻿<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Okta.Wizard.Wpf"
+        xmlns:Controls="clr-namespace:Okta.Wizard.Wpf.Controls" x:Class="Okta.Wizard.Wpf.OktaWizardWindow"
+        mc:Ignorable="d"
+        WindowStyle="SingleBorderWindow"
+        Height="592" Width="752" Icon="/Windows/blank.png">
+    <Grid Margin="0,0,46,-65">
+
+        <Controls:OrganizationRequestUserControl HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="OrganizationRequestControl" Margin="139,121,0,0" Width="567"/>
+        <Controls:ActivationPendingUserControl x:Name="ActivationPendingControl" Visibility="Hidden" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="HeaderLabel" Content="Register" HorizontalAlignment="Left" Margin="67,74,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Image HorizontalAlignment="Left" Height="59" Margin="42,10,0,0" VerticalAlignment="Top" Width="166" Source="/Windows/Okta_Logo.png"/>
+        <Controls:ConfiguringApplicationUserControl x:Name="ConfiguringApplicationControl" Visibility="Hidden" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "okta": {
+      "commandName": "Project",
+      "commandLineArgs": "-projectDirectory ~/source/repos/TestProjectDirectory/TestProjectDirectory"
+    }
+  }
+}

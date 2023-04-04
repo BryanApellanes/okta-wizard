@@ -1,0 +1,19 @@
+﻿{
+    "Time": "2/7/2021 9:34:34 AM",
+    "Year": "2021",
+    "UserName": "user.name",
+    "UserDomain": "usermachinename",
+    "MachineName": "usermachinename",
+    "ClrVersion": "4.0.30319.42000",
+    "RegisteredOrganization": "",
+    "RunSilent": "False",
+    "SolutionDirectory": "C:\\source\\repos\\OktaApplicationWizard28",
+    "ProjectName": "OktaApplicationWizard28",
+    "SafeProjectName": "OktaApplicationWizard28",
+    "CurrentUiCultureName": "en-US",
+    "InstallPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\",
+    "SpecifiedSolutionName": "",
+    "ExclusiveProject": "True",
+    "DestinationDirectory": "C:\\source\\repos\\OktaApplicationWizard28",
+    "TargetFrameworkVersion": "4.5"    
+}

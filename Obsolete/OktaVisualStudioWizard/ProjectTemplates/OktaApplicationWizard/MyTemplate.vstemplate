@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Okta Application</Name>
+    <Description>Guided Okta project application wizard.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>OktaApplicationWizard</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="EmptyNetStandardWizardBase.csproj" File="EmptyNetStandardWizardBase.csproj" ReplaceParameters="true" />
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>OktaVisualStudioWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2a3f23d6932e581f</Assembly>
+    <FullClassName>Okta.VisualStudio.Wizard.OktaVisualStudioWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "okta": {
+      "commandName": "Project"
+    }
+  }
+}

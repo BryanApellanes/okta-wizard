@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Okta>
+	<ClientId>{ClientId}</ClientId>
+	<OktaDomain>https://{yourOktaDomain}</OktaDomain>
+    <RedirectUri>my.app.login:/callback</RedirectUri>
+    <PostLogoutRedirectUri>my.app.logout:/callback</PostLogoutRedirectUri>
+</Okta>

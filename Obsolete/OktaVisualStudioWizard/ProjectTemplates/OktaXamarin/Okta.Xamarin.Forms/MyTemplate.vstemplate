@@ -1,0 +1,57 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Okta.Xamarin.Forms</Name>
+    <Description>Create custom cross platform Okta Xamarin components</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>$safeprojectname$</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Okta.Xamarin.Forms.csproj" ReplaceParameters="true" TargetFileName="$projectname$.csproj">
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Item.cs">Item.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IDataStore.cs">IDataStore.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MockDataStore.cs">MockDataStore.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AboutViewModel.cs">AboutViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseViewModel.cs">BaseViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemDetailViewModel.cs">ItemDetailViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemsViewModel.cs">ItemsViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginViewModel.cs">LoginViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NewItemViewModel.cs">NewItemViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProfileViewModel.cs">ProfileViewModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AboutPage.xaml">AboutPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AboutPage.xaml.cs">AboutPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemDetailPage.xaml">ItemDetailPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemDetailPage.xaml.cs">ItemDetailPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemsPage.xaml">ItemsPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemsPage.xaml.cs">ItemsPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginPage.xaml">LoginPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginPage.xaml.cs">LoginPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NewItemPage.xaml">NewItemPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NewItemPage.xaml.cs">NewItemPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProfilePage.xaml">ProfilePage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProfilePage.xaml.cs">ProfilePage.xaml.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AppShell.xaml">AppShell.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AppShell.xaml.cs">AppShell.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="GettingStarted.txt">GettingStarted.txt</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

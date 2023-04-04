@@ -1,0 +1,49 @@
+{
+  "name": "oidc_client",
+  "label": "SerializeCorrectly_test",
+  "signOnMode": "OPENID_CONNECT",
+  "credentials": {
+    "oauthClient": {
+      "autoKeyRotation": true,
+      "client_id": null,
+      "token_endpoint_auth_method": "none"
+    }
+  },
+  "settings": {
+    "app": {},
+    "notifications": {
+      "vpn": {
+        "network": {
+          "connection": "DISABLED"
+        },
+        "message": "My Native Test App",
+        "helpUrl": null
+      }
+    },
+    "oauthClient": {
+      "client_uri": null,
+      "logo_uri": null,
+      "redirect_uris": [
+        "my.app.login:/callback",
+        "com.okta.xamarin.ios.login:/callback"
+      ],
+      "post_logout_redirect_uris": [
+        "my.app.logout:/callback",
+        "com.okta.xamarin.ios.logout:/callback"
+      ],
+      "response_types": [
+        "code"
+      ],
+      "grant_types": [
+        "authorization_code"
+      ],
+      "application_type": "native",
+      "consent_method": "REQUIRED",
+      "issuer_mode": "ORG_URL",
+      "idp_initiated_login": {
+        "mode": "DISABLED",
+        "default_scope": []
+      }
+    }
+  }
+}

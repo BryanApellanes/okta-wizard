@@ -1,0 +1,21 @@
+[submodule "TemplateProjects/samples-aspnetcore"]
+	path = TemplateProjects/samples-aspnetcore
+	url = https://github.com/okta/samples-aspnetcore.git
+[submodule "TelemetryService"]
+	path = TelemetryService
+	url = https://github.com/okta/okta-devex-telemetry.git
+[submodule "TemplateProjects/samples-xamarin"]
+	path = TemplateProjects/samples-xamarin
+	url = https://github.com/okta/samples-xamarin.git
+[submodule "TemplateProjects/samples-blazor"]
+	path = TemplateProjects/samples-blazor
+	url = https://github.com/okta/samples-blazor.git
+[submodule "submodules/okta-sdk-dotnet"]
+	path = submodules/okta-sdk-dotnet
+	url = git@github.com:okta/okta-sdk-dotnet.git
+[submodule "submodules/samples-aspnetcore"]
+	path = submodules/samples-aspnetcore
+	url = git@github.com:okta/samples-aspnetcore.git
+[submodule "submodules/samples-blazor"]
+	path = submodules/samples-blazor
+	url = git@github.com:okta/samples-blazor.git

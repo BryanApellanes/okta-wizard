@@ -1,0 +1,4 @@
+﻿<WizardExtension>
+	<Assembly>OktaVisualStudioWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=523e9d70c04c26b0</Assembly>
+	<FullClassName>OktaVisualStudioWizard.OktaVisualStudioWizard</FullClassName>
+</WizardExtension>

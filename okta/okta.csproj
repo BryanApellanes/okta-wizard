@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <BaseOutputPath>$(USERPROFILE)\.okta\wizard\bin</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Windows\blank.png" />
+    <None Remove="Windows\Okta.jpg" />
+    <None Remove="Windows\Okta_Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+    <PackageReference Include="Ninject" Version="3.3.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Okta.Wizard\Okta.Wizard\Okta.Wizard.csproj" />
+    <ProjectReference Include="..\submodules\okta-sdk-dotnet\src\Okta.Sdk\Okta.Sdk.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Windows\blank.png" />
+    <Resource Include="Windows\Okta.jpg" />
+    <Resource Include="Windows\Okta_Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controls\ActivationPendingUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\OrganizationRequestUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\OktaWizardWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\loading.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y $(OutDir) $(UserProfile)\.okta\wizard\bin" />
+  </Target>
+
+</Project>

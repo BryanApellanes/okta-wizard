@@ -1,0 +1,44 @@
+﻿<UserControl Background="White"
+    x:Class="Okta.Wizard.Wpf.Controls.OrganizationRequestUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Okta.Wizard.Wpf.Controls"
+             mc:Ignorable="d" Height="412" Width="742">
+    <UserControl.Resources>
+        <local:Countries x:Key="ValidCountries"/>
+        <DataTemplate x:Key="CountryItems">
+            <ComboBoxItem Content="{Binding Path=Name}"/>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid Margin="0,0,27,10">
+        <TextBox  x:Name="FirstNameTextBox" HorizontalAlignment="Left" Margin="180,26,0,0" TextWrapping="Wrap" Text="{Binding FirstName}" VerticalAlignment="Top" Width="269"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="20,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.355,-1.039" Width="95"/>
+        <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Margin="180,79,0,0" TextWrapping="Wrap" Text="{Binding LastName}" VerticalAlignment="Top" Width="269"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="20,75,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.355,-1.039" Width="93"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Margin="180,129,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="269"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="20,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.355,-1.039" Width="54"/>
+
+        <ComboBox HorizontalAlignment="Left" Margin="180,182,0,0" VerticalAlignment="Top" Width="269" RenderTransformOrigin="0.325,0.457" 
+                  ItemsSource="{StaticResource ValidCountries}"
+                  DisplayMemberPath="Name"
+                  SelectedValuePath="Name"
+                  SelectedValue="{Binding Country}"
+                  />
+
+
+        <Label Content="Country" HorizontalAlignment="Left" Margin="20,186,0,0" VerticalAlignment="Top" Width="54"/>
+        <Button Command="{Binding ButtonClickCommand}" Content="{Binding ButtonText}" HorizontalAlignment="Left" Margin="299,274,0,0" VerticalAlignment="Top" Width="150" Height="40" x:Name="Button">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Please enter your first name" HorizontalAlignment="Left" Margin="178,44,0,0" VerticalAlignment="Top" Foreground="#FFEA1212" x:Name="FirstNameWarning" Height="25"/>
+        <Label Content="Please enter your last name" HorizontalAlignment="Left" Margin="180,97,0,0" VerticalAlignment="Top" Foreground="#FFEA1212" x:Name="LastNameWarning"/>
+        <Label Content="Please enter a valid email" HorizontalAlignment="Left" Margin="180,147,0,0" VerticalAlignment="Top" Foreground="#FFEA1212" x:Name="EmailWarning"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,26 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Okta Xamarin</Name>
+        <Description>A Xamarin Forms project template with Okta authentication built in</Description>
+        <Icon>__TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="Common">
+                Okta.Xamarin.Forms\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.Android">
+                Okta.Xamarin.Android\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$projectname$.iOS">
+                Okta.Xamarin.iOS\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+    <WizardExtension>
+      <Assembly>OktaVisualStudioWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2a3f23d6932e581f</Assembly>
+      <FullClassName>Okta.VisualStudio.Wizard.OktaVisualStudioWizard</FullClassName>
+    </WizardExtension>
+</VSTemplate>
